@@ -1,0 +1,9 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <StartArguments>/s:"D:\SiGlaz\ABS\Main\Docs\Requirements\Team\Test\123.srp" /i:"D:\SiGlaz\ABS\Main\Docs\Requirements\Data\ABS-Inspection\New ABS - Pole Images\50x_10x.63\ABS10x.63_1.bmp" /c:1 /nocopyright /nohelptext /timeOut:-1</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <StartArguments>/s:"D:\SiGlaz\ABS\Main\Docs\Requirements\Team\Test\123.srp" /i:"D:\SiGlaz\ABS\Main\Docs\Requirements\Data\ABS-Inspection\New ABS - Pole Images\50x_10x.63\ABS10x.63_1.bmp" /c:1 /nocopyright /nohelptext 
+/timeOut:-1</StartArguments>
+  </PropertyGroup>
+</Project>

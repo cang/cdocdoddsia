@@ -1,0 +1,349 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2D16A0C9-D7FF-4343-B857-28559DCA4940}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>SiGlazImageAnalyzerWorkbench</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SIA.Workbench</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>SIA.Workbench.AppEntry.ApplicationEntry</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <DebugType>
+    </DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SIA.Common, Version=8.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SIA.SystemFrameworks, Version=8.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.SystemFrameworks.dll</HintPath>
+    </Reference>
+    <Reference Include="SIA.Workbench.Common, Version=8.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.Workbench.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\SIA.Plugin\SIA.Plugins.csproj">
+      <Project>{7CB6A1F4-FE03-4E6A-A4DD-ABA33F5637C4}</Project>
+      <Name>SIA.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIA.UI.Components\SIA.UI.Components.csproj">
+      <Name>SIA.UI.Components</Name>
+      <Project>{6F52739C-17D5-4514-8303-4C16EC0BA012}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\SIA.UI.Controls\SIA.UI.Controls.csproj">
+      <Name>SIA.UI.Controls</Name>
+      <Project>{50F0D006-2B8E-4994-9A8F-C194F614EAD6}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\SiGlaz.UI.CustomControls\SiGlaz.UI.CustomControls.csproj">
+      <Project>{84FF3ED8-9782-40A0-ABCD-E08591B81256}</Project>
+      <Name>SiGlaz.UI.CustomControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <EmbeddedResource Include="Resources\ProcessSteps\ReportAlignmentResultStep.png" />
+    <EmbeddedResource Include="Resources\ProcessSteps\CombineObjectsStep.png" />
+    <EmbeddedResource Include="Resources\ProcessSteps\DetectAnomaliesStep.png" />
+    <EmbeddedResource Include="Resources\ProcessSteps\DetectCoordinateStep.png" />
+    <EmbeddedResource Include="Resources\ProcessSteps\FilterObjectStep.png" />
+    <None Include="Resources\about_SIA.jpg" />
+    <EmbeddedResource Include="Resources\ProcessSteps\OverlayDefectOnABSStep.png" />
+    <EmbeddedResource Include="Resources\ProcessSteps\ExportDefectListStep.png" />
+    <EmbeddedResource Include="Resources\ProcessSteps\HistEqualizeStep.png" />
+    <EmbeddedResource Include="Dialogs\DlgSetTheMonitorFrequency.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DlgSetTheMonitorFrequency.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\about_BWA.jpg" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ProcessSteps\ExtGlobalBckgStep.png" />
+    <EmbeddedResource Include="Resources\ProcessSteps\FilterFFTStep.png" />
+    <EmbeddedResource Include="Resources\ProcessSteps\GaussianFilterStep.png" />
+    <Compile Include="..\ProductVersion.cs">
+      <Link>AppEntry\ProductVersion.cs</Link>
+    </Compile>
+    <Compile Include="AppEntry\AppDomainHelper.cs" />
+    <Compile Include="AppEntry\ApplicationEntry.cs" />
+    <Compile Include="AppEntry\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\RichTextBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomDataObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DlgAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DlgPluginLoadFailed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DlgPluginManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DlgSetTheMonitorFrequency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DlgSetTheMonitorFrequency.Designer.cs">
+      <DependentUpon>DlgSetTheMonitorFrequency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Locker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress\ProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Resources\Strings.cs">
+      <SubType>Code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="ScriptMonitor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControls\SIAWExplorerBarManager.cs" />
+    <Compile Include="UserControls\ScriptBuilder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\ScriptExecution.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\ScriptTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\ScriptViewer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\StatusTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucScriptBuilder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucScriptBuilder2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucScriptExcutor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucScriptExcutor2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utilities\ScanFolderDatabase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\ScanFolderEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\ScanFolderSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkingSpace.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Components\RichTextBoxEx.resx">
+      <DependentUpon>RichTextBoxEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DlgAbout.resx">
+      <DependentUpon>DlgAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DlgPluginLoadFailed.resx">
+      <DependentUpon>DlgPluginLoadFailed.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DlgPluginManager.resx">
+      <DependentUpon>DlgPluginManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm3.resx">
+      <DependentUpon>MainForm3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress\ProgressBar.resx">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\nosettings.gif" />
+    <EmbeddedResource Include="Resources\Images\process.gif" />
+    <EmbeddedResource Include="Resources\Images\settings.gif" />
+    <EmbeddedResource Include="Resources\ProcessSteps\BeginProcessStep.png" />
+    <EmbeddedResource Include="Resources\ProcessSteps\CalculationsStep.png" />
+    <EmbeddedResource Include="Resources\ProcessSteps\Custom.png" />
+    <EmbeddedResource Include="Resources\ProcessSteps\DetectObjectStep.png" />
+    <EmbeddedResource Include="Resources\ProcessSteps\EndProcessStep.png" />
+    <EmbeddedResource Include="Resources\ProcessSteps\FilterRankStep.png" />
+    <EmbeddedResource Include="Resources\ProcessSteps\FilterVarianceStep.png" />
+    <EmbeddedResource Include="Resources\ProcessSteps\GbcStep.png" />
+    <EmbeddedResource Include="Resources\ProcessSteps\InvertStep.png" />
+    <EmbeddedResource Include="Resources\ProcessSteps\KernelFilterStep.png" />
+    <EmbeddedResource Include="Resources\ProcessSteps\LoadImageStep.png" />
+    <EmbeddedResource Include="Resources\ProcessSteps\LoadSingleImageStep.png" />
+    <EmbeddedResource Include="Resources\ProcessSteps\SaveImageStep.png" />
+    <EmbeddedResource Include="Resources\ProcessSteps\SmoothFilterStep.png" />
+    <EmbeddedResource Include="Resources\ProcessSteps\ThresholdStep.png" />
+    <EmbeddedResource Include="Resources\Strings.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ScriptBuilder.resx">
+      <DependentUpon>ScriptBuilder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucScriptBuilder.resx">
+      <DependentUpon>ucScriptBuilder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucScriptBuilder2.resx">
+      <DependentUpon>ucScriptBuilder2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucScriptExcutor.resx">
+      <DependentUpon>ucScriptExcutor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucScriptExcutor2.resx">
+      <DependentUpon>ucScriptExcutor2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,238 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <OwnerKey>{FE3BBBB6-72D5-11d2-9ACE-00C04F79A2A4}</OwnerKey>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94369438-3449-4BB8-B1FB-940A3417F9EE}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>SIA.SystemLayer</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SIA.SystemLayer</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG;USING_IPL</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>1591</NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;USING_IPL</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;USING_IPL,GPU_SUPPORTED_</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>1591</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE;USING_IPL,GPU_SUPPORTED_</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>
+    </DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cloo, Version=0.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\Cloo.dll</HintPath>
+    </Reference>
+    <Reference Include="SIA.Common, Version=8.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SIA.IPEngine, Version=8.4.14.40110, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.IPEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="SIA.SystemFrameworks, Version=8.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.SystemFrameworks.dll</HintPath>
+    </Reference>
+    <Reference Include="SIA.SystemFrameworks.ComputerVision, Version=8.4.14.40110, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.SystemFrameworks.ComputerVision.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>GlobalAssemblyInfo.cs</Link>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="..\GlobalAssemblyVersionInfo.cs">
+      <Link>GlobalAssemblyVersionInfo.cs</Link>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommonImage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ImageProcessing\CameraCorrection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ImageProcessing\HotDeadPixelAnalyzer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ImageProcessing\kKernelFilters.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IplCallback.cs" />
+    <Compile Include="IplImage.cs" />
+    <Compile Include="IplManagedImage.cs" />
+    <Compile Include="Mask\MaskHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mask\QuadTreeNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mathematics\EllipseFitting.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mathematics\Intersection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mathematics\IntersectionEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mathematics\Regression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectDetection.cs" />
+    <Compile Include="ObjectExtraction\ObjectExtrator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectExtraction\Thresholders\AutomaticThresholder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectExtraction\Thresholders\BaseThresholder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectExtraction\Thresholders\DynamicThresholder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectExtraction\Thresholders\StaticThresholder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectExtraction\Utilities\PolygonEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenCv\cv.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenCv\cxcore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenCv\structs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PatternRecogition\Clustering.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Trendline.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SiGlaz.Cloo\SiGlaz.Cloo.csproj">
+      <Project>{7B6A7325-F1BD-47BC-B9CB-5E0091D7674F}</Project>
+      <Name>SiGlaz.Cloo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

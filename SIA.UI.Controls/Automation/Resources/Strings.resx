@@ -1,0 +1,89 @@
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="LoadImageStep">
+		<value>Load Image from File</value>
+	</data>
+	<data name="SaveImageStep">
+		<value>Save Image to File</value>
+	</data>
+	<data name="DetectObjectStep">
+		<value>Detect Objects</value>
+	</data>
+	<data name="DetectWaferBoundStep">
+		<value>Detect Wafer Boundary</value>
+	</data>
+	<data name="ExportKLARFStep">
+		<value>Export Detected Object to KLARF File</value>
+	</data>
+	<data name="FilterFFTStep">
+		<value>Apply FFT (Fast Fourier Transform) Filter</value>
+	</data>
+	<data name="FilterRankStep">
+		<value>Apply Rank Filter</value>
+	</data>
+	<data name="FilterVarianceStep">
+		<value>Appy Variance Filter</value>
+	</data>
+	<data name="KernelFilterStep">
+		<value>Appy Kernel Filter</value>
+	</data>
+	<data name="GbcStep">
+		<value>Process Global Background Correction</value>
+	</data>
+	<data name="CalculationsStep">
+		<value>Process Calculation</value>
+	</data>
+	<data name="ClearWaferboundStep">
+		<value>Clear Wafer Boundary</value>
+	</data>
+	<data name="InvertStep">
+		<value>Invert Image</value>
+	</data>
+	<data name="LoadWaferBoundaryStep">
+		<value>Load Wafer Boundary from File</value>
+	</data>
+	<data name="WaferDistortionCorrectionStep">
+		<value>Process Distortion Correction</value>
+	</data>
+	<data name="SaveWaferBoundaryStep">
+		<value>Save Wafer Boundary to File</value>
+	</data>
+</root>

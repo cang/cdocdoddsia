@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{68286501-A848-4517-ADB7-49E035E57A02}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SiGlaz.FeatureProcessing</RootNamespace>
+    <AssemblyName>SiGlaz.FeatureProcessing</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SIA.Common, Version=8.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SIA.IPEngine, Version=8.4.14.40110, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.IPEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="SIA.SystemFrameworks, Version=8.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.SystemFrameworks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FeatureExtractor.cs" />
+    <Compile Include="FeatureSpace.cs" />
+    <Compile Include="FeatureVector.cs" />
+    <Compile Include="FeatureVectorCollection.cs" />
+    <Compile Include="Filters\WienerProcessor.cs" />
+    <Compile Include="Helpers\ContaminationTexturalInfoHelperPoleTip.cs" />
+    <Compile Include="Helpers\LinePatternTexturalInfoHelper.cs" />
+    <Compile Include="Helpers\ContaminationTexturalInfoHelper.cs" />
+    <Compile Include="IFeatureDescriptor.cs" />
+    <Compile Include="IFeatureExtractor.cs" />
+    <Compile Include="IFeatureVector.cs" />
+    <Compile Include="Parallel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Textural\GrayCoMatrixOperator.cs" />
+    <Compile Include="Textural\HaralickTextureExtrator.cs" />
+    <Compile Include="Textural\TextureExtractorBase.cs" />
+    <Compile Include="Textural\TextureProcessor.cs" />
+    <Compile Include="Wavelet\WaveletTransform.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SIA.SystemLayers\SIA.SystemLayer.csproj">
+      <Project>{94369438-3449-4BB8-B1FB-940A3417F9EE}</Project>
+      <Name>SIA.SystemLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiGlaz.Common\SiGlaz.Common.csproj">
+      <Project>{A8AE20C3-EAD5-4356-98CD-84F1A34F1A03}</Project>
+      <Name>SiGlaz.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fourier\" />
+    <Folder Include="Geometric\" />
+    <Folder Include="Shape\" />
+    <Folder Include="Statistical\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,144 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIA.UI.Components", "SIA.UI.Components\SIA.UI.Components.csproj", "{6F52739C-17D5-4514-8303-4C16EC0BA012}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIA.SystemLayer", "SIA.SystemLayers\SIA.SystemLayer.csproj", "{94369438-3449-4BB8-B1FB-940A3417F9EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIA.UI.MaskEditor", "SIA.UI.MaskEditor\SIA.UI.MaskEditor.csproj", "{D107E3B1-96CB-4488-AC41-4899D8D04995}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiGlaz.Common", "SiGlaz.Common\SiGlaz.Common.csproj", "{A8AE20C3-EAD5-4356-98CD-84F1A34F1A03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIA.UI.Controls", "SIA.UI.Controls\SIA.UI.Controls.csproj", "{50F0D006-2B8E-4994-9A8F-C194F614EAD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIA.Plugins", "SIA.Plugin\SIA.Plugins.csproj", "{7CB6A1F4-FE03-4E6A-A4DD-ABA33F5637C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIA.UI", "SIA.UI\SIA.UI.csproj", "{35319495-4933-41FB-B49C-C453F5048866}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIA.Automation.Launcher", "SIA.Automation.Launcher\SIA.Automation.Launcher.csproj", "{91F6FDF6-33B0-4055-9DC8-77180C6348D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIA.Workbench", "SIA.Workbench\SIA.Workbench.csproj", "{2D16A0C9-D7FF-4343-B857-28559DCA4940}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{60219743-C0BA-4D3D-A05A-7885433C49AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiGlaz.UI.CustomControls", "SiGlaz.UI.CustomControls\SiGlaz.UI.CustomControls.csproj", "{84FF3ED8-9782-40A0-ABCD-E08591B81256}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiGlaz.ObjectAnalysis", "SiGlaz.ObjectAnalysis\SiGlaz.ObjectAnalysis.csproj", "{AD0C8A91-21B3-419D-9E56-4E7A7E573491}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIA.Algorithms", "SIA.Algorithms\SIA.Algorithms.csproj", "{2CF4437A-E529-40DF-8AB6-F7E240ECBFFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiGlaz.Cloo", "SiGlaz.Cloo\SiGlaz.Cloo.csproj", "{7B6A7325-F1BD-47BC-B9CB-5E0091D7674F}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 15
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://sglserver:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SIA.Automation.Launcher\\SIA.Automation.Launcher.csproj
+		SccProjectName1 = SIA.Automation.Launcher
+		SccLocalPath1 = SIA.Automation.Launcher
+		SccProjectUniqueName2 = SIA.Plugin\\SIA.Plugins.csproj
+		SccProjectName2 = SIA.Plugin
+		SccLocalPath2 = SIA.Plugin
+		SccProjectUniqueName3 = SIA.SystemLayers\\SIA.SystemLayer.csproj
+		SccProjectName3 = SIA.SystemLayers
+		SccLocalPath3 = SIA.SystemLayers
+		SccProjectUniqueName4 = SIA.UI.Components\\SIA.UI.Components.csproj
+		SccProjectName4 = SIA.UI.Components
+		SccLocalPath4 = SIA.UI.Components
+		SccProjectUniqueName5 = SIA.UI.Controls\\SIA.UI.Controls.csproj
+		SccProjectName5 = SIA.UI.Controls
+		SccLocalPath5 = SIA.UI.Controls
+		SccProjectUniqueName6 = SIA.UI.MaskEditor\\SIA.UI.MaskEditor.csproj
+		SccProjectName6 = SIA.UI.MaskEditor
+		SccLocalPath6 = SIA.UI.MaskEditor
+		SccProjectUniqueName7 = SIA.UI\\SIA.UI.csproj
+		SccProjectName7 = SIA.UI
+		SccLocalPath7 = SIA.UI
+		SccProjectUniqueName8 = SIA.Workbench\\SIA.Workbench.csproj
+		SccProjectName8 = SIA.Workbench
+		SccLocalPath8 = SIA.Workbench
+		SccProjectUniqueName9 = SiGlaz.Common\\SiGlaz.Common.csproj
+		SccProjectName9 = SiGlaz.Common
+		SccLocalPath9 = SiGlaz.Common
+		SccProjectUniqueName10 = SiGlaz.UI.CustomControls\\SiGlaz.UI.CustomControls.csproj
+		SccProjectName10 = SiGlaz.UI.CustomControls
+		SccLocalPath10 = SiGlaz.UI.CustomControls
+		SccProjectUniqueName11 = UnitTest\\UnitTest.csproj
+		SccProjectName11 = UnitTest
+		SccLocalPath11 = UnitTest
+		SccProjectUniqueName12 = SiGlaz.ObjectAnalysis\\SiGlaz.ObjectAnalysis.csproj
+		SccProjectName12 = SiGlaz.ObjectAnalysis
+		SccLocalPath12 = SiGlaz.ObjectAnalysis
+		SccProjectUniqueName13 = SIA.Algorithms\\SIA.Algorithms.csproj
+		SccProjectName13 = SIA.Algorithms
+		SccLocalPath13 = SIA.Algorithms
+		SccProjectUniqueName14 = SiGlaz.Cloo\\SiGlaz.Cloo.csproj
+		SccProjectName14 = SiGlaz.Cloo
+		SccLocalPath14 = SiGlaz.Cloo
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F52739C-17D5-4514-8303-4C16EC0BA012}.Debug|x86.ActiveCfg = Debug|x86
+		{6F52739C-17D5-4514-8303-4C16EC0BA012}.Debug|x86.Build.0 = Debug|x86
+		{6F52739C-17D5-4514-8303-4C16EC0BA012}.Release|x86.ActiveCfg = Release|x86
+		{6F52739C-17D5-4514-8303-4C16EC0BA012}.Release|x86.Build.0 = Release|x86
+		{94369438-3449-4BB8-B1FB-940A3417F9EE}.Debug|x86.ActiveCfg = Debug|x86
+		{94369438-3449-4BB8-B1FB-940A3417F9EE}.Debug|x86.Build.0 = Debug|x86
+		{94369438-3449-4BB8-B1FB-940A3417F9EE}.Release|x86.ActiveCfg = Release|x86
+		{94369438-3449-4BB8-B1FB-940A3417F9EE}.Release|x86.Build.0 = Release|x86
+		{D107E3B1-96CB-4488-AC41-4899D8D04995}.Debug|x86.ActiveCfg = Debug|x86
+		{D107E3B1-96CB-4488-AC41-4899D8D04995}.Debug|x86.Build.0 = Debug|x86
+		{D107E3B1-96CB-4488-AC41-4899D8D04995}.Release|x86.ActiveCfg = Release|x86
+		{D107E3B1-96CB-4488-AC41-4899D8D04995}.Release|x86.Build.0 = Release|x86
+		{A8AE20C3-EAD5-4356-98CD-84F1A34F1A03}.Debug|x86.ActiveCfg = Debug|x86
+		{A8AE20C3-EAD5-4356-98CD-84F1A34F1A03}.Debug|x86.Build.0 = Debug|x86
+		{A8AE20C3-EAD5-4356-98CD-84F1A34F1A03}.Release|x86.ActiveCfg = Release|x86
+		{A8AE20C3-EAD5-4356-98CD-84F1A34F1A03}.Release|x86.Build.0 = Release|x86
+		{50F0D006-2B8E-4994-9A8F-C194F614EAD6}.Debug|x86.ActiveCfg = Debug|x86
+		{50F0D006-2B8E-4994-9A8F-C194F614EAD6}.Debug|x86.Build.0 = Debug|x86
+		{50F0D006-2B8E-4994-9A8F-C194F614EAD6}.Release|x86.ActiveCfg = Release|x86
+		{50F0D006-2B8E-4994-9A8F-C194F614EAD6}.Release|x86.Build.0 = Release|x86
+		{7CB6A1F4-FE03-4E6A-A4DD-ABA33F5637C4}.Debug|x86.ActiveCfg = Debug|x86
+		{7CB6A1F4-FE03-4E6A-A4DD-ABA33F5637C4}.Debug|x86.Build.0 = Debug|x86
+		{7CB6A1F4-FE03-4E6A-A4DD-ABA33F5637C4}.Release|x86.ActiveCfg = Release|x86
+		{7CB6A1F4-FE03-4E6A-A4DD-ABA33F5637C4}.Release|x86.Build.0 = Release|x86
+		{35319495-4933-41FB-B49C-C453F5048866}.Debug|x86.ActiveCfg = Debug|x86
+		{35319495-4933-41FB-B49C-C453F5048866}.Debug|x86.Build.0 = Debug|x86
+		{35319495-4933-41FB-B49C-C453F5048866}.Release|x86.ActiveCfg = Release|x86
+		{35319495-4933-41FB-B49C-C453F5048866}.Release|x86.Build.0 = Release|x86
+		{91F6FDF6-33B0-4055-9DC8-77180C6348D1}.Debug|x86.ActiveCfg = Debug|x86
+		{91F6FDF6-33B0-4055-9DC8-77180C6348D1}.Debug|x86.Build.0 = Debug|x86
+		{91F6FDF6-33B0-4055-9DC8-77180C6348D1}.Release|x86.ActiveCfg = Release|x86
+		{91F6FDF6-33B0-4055-9DC8-77180C6348D1}.Release|x86.Build.0 = Release|x86
+		{2D16A0C9-D7FF-4343-B857-28559DCA4940}.Debug|x86.ActiveCfg = Debug|x86
+		{2D16A0C9-D7FF-4343-B857-28559DCA4940}.Debug|x86.Build.0 = Debug|x86
+		{2D16A0C9-D7FF-4343-B857-28559DCA4940}.Release|x86.ActiveCfg = Release|x86
+		{2D16A0C9-D7FF-4343-B857-28559DCA4940}.Release|x86.Build.0 = Release|x86
+		{60219743-C0BA-4D3D-A05A-7885433C49AC}.Debug|x86.ActiveCfg = Debug|x86
+		{60219743-C0BA-4D3D-A05A-7885433C49AC}.Release|x86.ActiveCfg = Release|x86
+		{84FF3ED8-9782-40A0-ABCD-E08591B81256}.Debug|x86.ActiveCfg = Debug|x86
+		{84FF3ED8-9782-40A0-ABCD-E08591B81256}.Debug|x86.Build.0 = Debug|x86
+		{84FF3ED8-9782-40A0-ABCD-E08591B81256}.Release|x86.ActiveCfg = Release|x86
+		{84FF3ED8-9782-40A0-ABCD-E08591B81256}.Release|x86.Build.0 = Release|x86
+		{AD0C8A91-21B3-419D-9E56-4E7A7E573491}.Debug|x86.ActiveCfg = Debug|x86
+		{AD0C8A91-21B3-419D-9E56-4E7A7E573491}.Debug|x86.Build.0 = Debug|x86
+		{AD0C8A91-21B3-419D-9E56-4E7A7E573491}.Release|x86.ActiveCfg = Release|x86
+		{AD0C8A91-21B3-419D-9E56-4E7A7E573491}.Release|x86.Build.0 = Release|x86
+		{2CF4437A-E529-40DF-8AB6-F7E240ECBFFC}.Debug|x86.ActiveCfg = Debug|x86
+		{2CF4437A-E529-40DF-8AB6-F7E240ECBFFC}.Debug|x86.Build.0 = Debug|x86
+		{2CF4437A-E529-40DF-8AB6-F7E240ECBFFC}.Release|x86.ActiveCfg = Release|x86
+		{2CF4437A-E529-40DF-8AB6-F7E240ECBFFC}.Release|x86.Build.0 = Release|x86
+		{7B6A7325-F1BD-47BC-B9CB-5E0091D7674F}.Debug|x86.ActiveCfg = Debug|x86
+		{7B6A7325-F1BD-47BC-B9CB-5E0091D7674F}.Debug|x86.Build.0 = Debug|x86
+		{7B6A7325-F1BD-47BC-B9CB-5E0091D7674F}.Release|x86.ActiveCfg = Release|x86
+		{7B6A7325-F1BD-47BC-B9CB-5E0091D7674F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

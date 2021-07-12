@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD0C8A91-21B3-419D-9E56-4E7A7E573491}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SiGlaz.ObjectAnalysis</RootNamespace>
+    <AssemblyName>SiGlaz.ObjectAnalysis</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SIA.Common, Version=8.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SIA.SystemFrameworks, Version=8.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.SystemFrameworks.dll</HintPath>
+    </Reference>
+    <Reference Include="SiGlaz.Algorithms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SiGlaz.Algorithms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\FilterCondition.cs" />
+    <Compile Include="Common\MDCCParamFilterLibrary.cs" />
+    <Compile Include="Common\MDCCParamLibrary.cs" />
+    <Compile Include="Common\ObjectAnalyzerStepSettings.cs" />
+    <Compile Include="Engine\BackTrackingProcessor.cs" />
+    <Compile Include="Common\AbstractObject.cs" />
+    <Compile Include="Common\Topology.cs" />
+    <Compile Include="Common\TopologyBase.cs" />
+    <Compile Include="Engine\BaseQuery.cs" />
+    <Compile Include="Engine\CombinationProcessor.cs" />
+    <Compile Include="Engine\EllipseCalculator.cs" />
+    <Compile Include="Engine\FilterProcessor.cs" />
+    <Compile Include="Engine\MultidimensionalComparer.cs" />
+    <Compile Include="Engine\StringConditionParse.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ObjectAnalyzerStep.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ucAdvancedObjectAnalyzer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucAdvancedObjectAnalyzer.Designer.cs">
+      <DependentUpon>ucAdvancedObjectAnalyzer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucObjectAnalyzerStep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucObjectAnalyzerStep.Designer.cs">
+      <DependentUpon>ucObjectAnalyzerStep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\ConditionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\FilterOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SPCriterionDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SPRulesWizardCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SPValueDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SubConditionDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ucObjectClassificationStep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucObjectCombinationStep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucObjectExportingStep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucObjectFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucObjectFilter.Designer.cs">
+      <DependentUpon>ucObjectFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucObjectFilterStep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucPrimitiveObjectFilterStep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UniversalSelectionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UniversalSelectionHeaderField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucAdvancedObjectAnalyzer.resx">
+      <DependentUpon>ucAdvancedObjectAnalyzer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucObjectAnalyzerStep.resx">
+      <DependentUpon>ucObjectAnalyzerStep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConditionControl.resx">
+      <DependentUpon>ConditionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FilterOption.resx">
+      <DependentUpon>FilterOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SPCriterionDlg.resx">
+      <DependentUpon>SPCriterionDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SPRulesWizardCtrl.resx">
+      <DependentUpon>SPRulesWizardCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SPValueDlg.resx">
+      <DependentUpon>SPValueDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SubConditionDlg.resx">
+      <DependentUpon>SubConditionDlg.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SiGlaz.Common\SiGlaz.Common.csproj">
+      <Project>{A8AE20C3-EAD5-4356-98CD-84F1A34F1A03}</Project>
+      <Name>SiGlaz.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\align_ABS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\neural_network_classify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\object_filter.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\object_combine.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\next_step.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\next_step.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\object_classification.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\object_output.gif" />
+    <EmbeddedResource Include="UI\ucObjectCombinationStep.resx">
+      <DependentUpon>ucObjectCombinationStep.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\zone_lib_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\open.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\zone_lib_save.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\new_object.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\edit_available_object.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\delete_obj.gif" />
+    <EmbeddedResource Include="UI\ucObjectFilter.resx">
+      <DependentUpon>ucObjectFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UniversalSelectionControl.resx">
+      <DependentUpon>UniversalSelectionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UniversalSelectionHeaderField.resx">
+      <DependentUpon>UniversalSelectionHeaderField.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

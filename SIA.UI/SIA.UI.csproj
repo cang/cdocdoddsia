@@ -1,0 +1,626 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{35319495-4933-41FB-B49C-C453F5048866}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>SiGlazImageAnalyzer</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SIA.UI</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>SIA.UI.AppEntry.ApplicationEntry</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>1591</NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;GPU_SUPPORTED_</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <NoWarn>1591</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE;GPU_SUPPORTED_</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <DebugType>
+    </DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib">
+      <Name>mscorlib</Name>
+    </Reference>
+    <Reference Include="SIA.Common, Version=8.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SIA.IPEngine, Version=8.4.14.40110, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.IPEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="SIA.SystemFrameworks, Version=8.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.SystemFrameworks.dll</HintPath>
+    </Reference>
+    <Reference Include="SIA.UI.Help, Version=8.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.UI.Help.dll</HintPath>
+    </Reference>
+    <Reference Include="SIA.Workbench.Common, Version=8.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.Workbench.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SiGlaz.Algorithms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SiGlaz.Algorithms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\SIA.Algorithms\SIA.Algorithms.csproj">
+      <Project>{2CF4437A-E529-40DF-8AB6-F7E240ECBFFC}</Project>
+      <Name>SIA.Algorithms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiGlaz.Cloo\SiGlaz.Cloo.csproj">
+      <Project>{7B6A7325-F1BD-47BC-B9CB-5E0091D7674F}</Project>
+      <Name>SiGlaz.Cloo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiGlaz.Common\SiGlaz.Common.csproj">
+      <Project>{A8AE20C3-EAD5-4356-98CD-84F1A34F1A03}</Project>
+      <Name>SiGlaz.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIA.Plugin\SIA.Plugins.csproj">
+      <Name>SIA.Plugins</Name>
+      <Project>{7CB6A1F4-FE03-4E6A-A4DD-ABA33F5637C4}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\SIA.SystemLayers\SIA.SystemLayer.csproj">
+      <Name>SIA.SystemLayer</Name>
+      <Project>{94369438-3449-4BB8-B1FB-940A3417F9EE}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\SIA.UI.Components\SIA.UI.Components.csproj">
+      <Name>SIA.UI.Components</Name>
+      <Project>{6F52739C-17D5-4514-8303-4C16EC0BA012}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\SIA.UI.Controls\SIA.UI.Controls.csproj">
+      <Name>SIA.UI.Controls</Name>
+      <Project>{50F0D006-2B8E-4994-9A8F-C194F614EAD6}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\SIA.UI.MaskEditor\SIA.UI.MaskEditor.csproj">
+      <Project>{D107E3B1-96CB-4488-AC41-4899D8D04995}</Project>
+      <Name>SIA.UI.MaskEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiGlaz.UI.CustomControls\SiGlaz.UI.CustomControls.csproj">
+      <Project>{84FF3ED8-9782-40A0-ABCD-E08591B81256}</Project>
+      <Name>SiGlaz.UI.CustomControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <Content Include="App.ico" />
+    <Content Include="AppIcon.ico" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\export_defect_list.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\filter_object.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\move_origin.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\ruler.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\ruler.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\coordinate_system.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\key_line.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\key_point.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\coordinate_system.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\key_line.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\key_point.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\object_analyzer.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\object_analyzer.png" />
+    <None Include="Resources\about_SIA.jpg" />
+    <None Include="Resources\SIA.jpg" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\ABS.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\align_ABS.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\Extract_texture.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\neural_network_classify.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\ABS.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\align_ABS.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\Extract_texture.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\neural_network_classify.png" />
+    <None Include="Resources\BWA1.jpg" />
+    <EmbeddedResource Include="Resources\Images\Menu\del_mark.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\del_mask.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\edit_mark.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\del_mark.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\del_mask.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\edit_mark.png" />
+    <None Include="Resources\about_BWA.jpg" />
+    <None Include="Resources\BWA.jpg" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\Shortcut\unknown.png" />
+    <Compile Include="..\ProductVersion.cs">
+      <Link>AppEntry\ProductVersion.cs</Link>
+    </Compile>
+    <Compile Include="AppEntry\AppDomainHelper.cs" />
+    <Compile Include="AppEntry\ApplicationEntry.cs" />
+    <Compile Include="AppEntry\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AppEntry\ModuleLoader.cs" />
+    <Compile Include="CommandHandlers\Analysis\CmdAnalysisAdvancedObjectFilter.cs" />
+    <Compile Include="CommandHandlers\Analysis\CmdAnalysisCombineObject.cs" />
+    <Compile Include="CommandHandlers\Analysis\CmdAnalysisDetectAnomalies.cs" />
+    <Compile Include="CommandHandlers\Analysis\CmdAnalysisDetectCoordinateSystem.cs" />
+    <Compile Include="CommandHandlers\Analysis\CmdAnalysisDetectPads.cs" />
+    <Compile Include="CommandHandlers\Analysis\CmdAnalysisObjectList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Tools\CmdToolsExportObjectListToFile.cs" />
+    <Compile Include="CommandHandlers\Tools\CmdToolsOverlayDefectOnImage.cs" />
+    <Compile Include="CommandHandlers\Analysis\CmdAnalysisToggleDetectedObjects.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Analysis\CmdAnalysisToggleSelectedObjects.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\AppWorkspaceCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Tools\MetrologySystem\CmdToolsCreateReferenceImage.cs" />
+    <Compile Include="CommandHandlers\Tools\MetrologySystem\CmdToolsMeasurement.cs" />
+    <Compile Include="CommandHandlers\Tools\MetrologySystem\CmdCoordinateSystemAlign.cs" />
+    <Compile Include="CommandHandlers\Tools\MetrologySystem\CmdCoordinateSystemCalibration.cs" />
+    <Compile Include="CommandHandlers\Tools\MetrologySystem\CmdCoordinateSystemOrigin.cs" />
+    <Compile Include="CommandHandlers\Tools\MetrologySystem\CmdCoordinateSystemMarker.cs" />
+    <Compile Include="CommandHandlers\Tools\MetrologySystem\CmdCoordinateSystemScale.cs" />
+    <Compile Include="CommandHandlers\Edit\CmdEditCopy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Edit\CmdEditCustomize.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Edit\CmdEditPaste.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Edit\CmdEditPluginManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Edit\CmdEditRedo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Edit\CmdEditUndo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Files\CmdFileCloseImage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Files\CmdFileExitApplication.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Files\CmdFileOpenImage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Files\CmdFilePrintImage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Files\CmdFileProperties.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Files\CmdFileRecentFiles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Files\CmdFileSaveImage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Files\CmdFileSaveImageAs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Files\CmdFileSetDefaultFolder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Filters\CmdFiltersFourierTransform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Filters\CmdFiltersGaussian.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Filters\CmdFiltersKernelFilters.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Filters\CmdFiltersRank.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Filters\CmdFiltersSmooth.cs" />
+    <Compile Include="CommandHandlers\Filters\CmdFilterWiener.cs" />
+    <Compile Include="CommandHandlers\Help\CmdHelpAbout.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Help\CmdHelpIndex.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Process\CmdProcessCalculation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Process\CmdProcessCameraCorrection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Process\CmdProcessCreateGoldenImage.cs" />
+    <Compile Include="CommandHandlers\Process\CmdProcessExtractGlobalBackground.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Process\CmdProcessFlipRotate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Process\CmdProcessGlobalBackgroundCorrection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Process\CmdProcessHistogramEqualization.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Process\CmdProcessInvert.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Process\CmdProcessResize.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Process\CmdProcessStretchColor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Process\CmdProcessSubtractGoldenImage.cs" />
+    <Compile Include="CommandHandlers\Process\CmdProcessThreshold.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Tools\CmdToolsClearMask.cs" />
+    <Compile Include="CommandHandlers\Tools\MetrologySystem\CmdToolsCreateReferenceFile.cs" />
+    <Compile Include="CommandHandlers\Tools\CmdToolsLoadMask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Tools\CmdToolsMaskEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\Tools\CmdToolsToggleMask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\View\CmdView3DAreaPlot.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\View\CmdViewActualSize.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\View\CmdViewBoxProfile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\View\CmdViewCustomZoom.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\View\CmdViewFitOnScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\View\CmdViewHistory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\View\CmdViewIntensityHistogram.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\View\CmdViewLineProfile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\View\CmdViewPan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\View\CmdViewPseudoColor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\View\CmdViewScreenStretch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\View\CmdViewSelect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\View\CmdViewShortcutBar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\View\CmdViewStatusBar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\View\CmdViewToolBar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\View\CmdViewZoomIn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandHandlers\View\CmdViewZoomOut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandQueue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Constants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DlgAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DlgCustomize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DlgErrorReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DlgErrorReportDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DlgFlashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DlgHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DlgHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DlgPluginLoadFailed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DlgPluginManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helpers\DragDropManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\Locker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\NiceMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MainFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\MenuItemEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\AnalysisMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\EditMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\FileMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\FilterMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\HelpMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\ProcessMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\RecentFileMenu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Menus\ToolsMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\ViewMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SIAExplorerBarManager.cs" />
+    <Compile Include="Controls\SIAMainMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SIARecentFiles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SIAResources.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\SIAStatusBarEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SIAToolBarEx.cs" />
+    <EmbeddedResource Include="Dialogs\DlgAbout.resx">
+      <DependentUpon>DlgAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DlgCustomize.resx">
+      <DependentUpon>DlgCustomize.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DlgErrorReport.resx">
+      <DependentUpon>DlgErrorReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DlgErrorReportDetail.resx">
+      <DependentUpon>DlgErrorReportDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DlgFlashScreen.resx">
+      <DependentUpon>DlgFlashScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DlgHelp.resx">
+      <DependentUpon>DlgHelp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DlgHistory.resx">
+      <DependentUpon>DlgHistory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DlgPluginLoadFailed.resx">
+      <DependentUpon>DlgPluginLoadFailed.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DlgPluginManager.resx">
+      <DependentUpon>DlgPluginManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helpers\NiceMenu.resx">
+      <DependentUpon>NiceMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrame.resx">
+      <DependentUpon>MainFrame.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\Menu\AboutIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\ActualSizeIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\CopyIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\DetectObjIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\FitOnScreenIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\HandIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\HideDetObjIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\HideMskIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\HideSelObjIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\IndexIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\LoadMskIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\MskEdtIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\ObjListIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\OpenIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\OverlayIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\PasteIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\RedoIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\SaveIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\SelectIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\ShowDetObjIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\ShowMskIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\ShowSelObjIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\ToggleWBIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\UndoIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\ZoomInIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Menu\ZoomOutIcon.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\3dareaplot.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\boxprofile.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\calc.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\detobj.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\edgex.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\extglbbkg.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\flipHorizontal.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\flipVertical.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\fltfourier.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\fltgaussian.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\fltkernel.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\fltsmooth.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\glbbkgcorr.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\histequal.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\intensity.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\invert.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\itscorr.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\lineprofile.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\overlayklarf.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\pseudocolor.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\rankfilter.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\resizeImage.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\rotate90CCW.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\rotate90CW.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\screenstretch.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\stretchcolor.png" />
+    <EmbeddedResource Include="Resources\Images\Shortcut\threshold.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2CF4437A-E529-40DF-8AB6-F7E240ECBFFC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SIA.Algorithms</RootNamespace>
+    <AssemblyName>SIA.Algorithms</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;GPU_SUPPORTED_</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE;GPU_SUPPORTED_</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cloo, Version=0.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\Cloo.dll</HintPath>
+    </Reference>
+    <Reference Include="SIA.Common, Version=8.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SIA.IPEngine, Version=8.4.14.40110, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.IPEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="SIA.SystemFrameworks, Version=8.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.SystemFrameworks.dll</HintPath>
+    </Reference>
+    <Reference Include="SiGlaz.Algorithms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SiGlaz.Algorithms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SiGlaz.ML.NNFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SiGlaz.ML.NNFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classification\ABSPatternClassifier.cs" />
+    <Compile Include="Classification\ClassifierBase.cs" />
+    <Compile Include="Classification\IClassifier.cs" />
+    <Compile Include="Classification\LineClassifer.cs" />
+    <Compile Include="Classification\NN\NNClassifier.cs" />
+    <Compile Include="Classification\SVM\SVMClassifier.cs" />
+    <Compile Include="Debugger.cs" />
+    <Compile Include="FeatureProcessing\FeatureExtractor.cs" />
+    <Compile Include="FeatureProcessing\FeatureSpace.cs" />
+    <Compile Include="FeatureProcessing\FeatureVector.cs" />
+    <Compile Include="FeatureProcessing\FeatureVectorCollection.cs" />
+    <Compile Include="FeatureProcessing\Filters\WienerProcessor.cs" />
+    <Compile Include="FeatureProcessing\Filters\WienerProcessorGPU.cs" />
+    <Compile Include="FeatureProcessing\Helpers\ContaminationTexturalInfoHelper.cs" />
+    <Compile Include="FeatureProcessing\Helpers\ContaminationTexturalInfoHelperPoleTip.cs" />
+    <Compile Include="FeatureProcessing\Helpers\LinePatternTexturalInfoHelper.cs" />
+    <Compile Include="FeatureProcessing\IFeatureDescriptor.cs" />
+    <Compile Include="FeatureProcessing\IFeatureExtractor.cs" />
+    <Compile Include="FeatureProcessing\IFeatureVector.cs" />
+    <Compile Include="FeatureProcessing\Textural\GrayCoMatrixOperator.cs" />
+    <Compile Include="FeatureProcessing\Textural\HaralickTextureExtrator.cs" />
+    <Compile Include="FeatureProcessing\Textural\TextureExtractorBase.cs" />
+    <Compile Include="FeatureProcessing\Textural\TextureProcessor.cs" />
+    <Compile Include="FeatureProcessing\Wavelet\WaveletTransform.cs" />
+    <Compile Include="ObjectDetection\ContourTracing.cs" />
+    <Compile Include="ObjectDetection\ObjectDetector.cs" />
+    <Compile Include="PolygonEx.cs" />
+    <Compile Include="Preprocessing\Alignment\ABSAligner.cs" />
+    <Compile Include="Preprocessing\Alignment\ABSAlignerGPU.cs" />
+    <Compile Include="Preprocessing\Alignment\Aligner.cs" />
+    <Compile Include="Preprocessing\Alignment\AlignerBase.cs" />
+    <Compile Include="Preprocessing\Alignment\AlignerFactory.cs" />
+    <Compile Include="Preprocessing\Alignment\AlignmentResult.cs" />
+    <Compile Include="Preprocessing\Alignment\DepoAligner.cs" />
+    <Compile Include="Preprocessing\Alignment\IRAligner.cs" />
+    <Compile Include="Preprocessing\Alignment\PoleTipAligner.cs" />
+    <Compile Include="Preprocessing\BestList.cs" />
+    <Compile Include="Preprocessing\Filtering\Filter.cs" />
+    <Compile Include="Preprocessing\Interpolation\ImageInterplator.cs" />
+    <Compile Include="Preprocessing\Matching\BitPatternMatcher.cs" />
+    <Compile Include="Preprocessing\Matching\CorrelationMatcher.cs" />
+    <Compile Include="Preprocessing\Matching\CorrelationMatcherGPU.cs" />
+    <Compile Include="Preprocessing\Matching\GoldenImageMatcher.cs" />
+    <Compile Include="Preprocessing\Matching\GradientMapMatcher.cs" />
+    <Compile Include="Preprocessing\Matching\GradientMapMatcherGPU.cs" />
+    <Compile Include="Preprocessing\Matching\HaarPatternMatcher.cs" />
+    <Compile Include="Preprocessing\Matching\IMatcher.cs" />
+    <Compile Include="Preprocessing\Matching\SimpleMatcher.cs" />
+    <Compile Include="Preprocessing\Misc.cs" />
+    <Compile Include="Preprocessing\MyMatrix.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReferenceFile\ABSReferenceFileProcessor.cs" />
+    <Compile Include="ReferenceFile\GoldenImageCreator.cs" />
+    <Compile Include="ReferenceFile\GoldenImageProcessor.cs" />
+    <Compile Include="ReferenceFile\ReferenceFileProcessor.cs" />
+    <Compile Include="ReferenceFile\ReferenceImageProcessor.cs" />
+    <Compile Include="Regions\ABSRegionProcessor.cs" />
+    <Compile Include="Regions\RegionProcessor.cs" />
+    <Compile Include="SimpleImageIO.cs" />
+    <Compile Include="SimpleImageUtilities.cs" />
+    <Compile Include="Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SIA.SystemLayers\SIA.SystemLayer.csproj">
+      <Project>{94369438-3449-4BB8-B1FB-940A3417F9EE}</Project>
+      <Name>SIA.SystemLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiGlaz.Cloo\SiGlaz.Cloo.csproj">
+      <Project>{7B6A7325-F1BD-47BC-B9CB-5E0091D7674F}</Project>
+      <Name>SiGlaz.Cloo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiGlaz.Common\SiGlaz.Common.csproj">
+      <Project>{A8AE20C3-EAD5-4356-98CD-84F1A34F1A03}</Project>
+      <Name>SiGlaz.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classification\KMeans\" />
+    <Folder Include="Classification\KNN\" />
+    <Folder Include="FeatureProcessing\Fourier\" />
+    <Folder Include="FeatureProcessing\Geometric\" />
+    <Folder Include="FeatureProcessing\Shape\" />
+    <Folder Include="FeatureProcessing\Statistical\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

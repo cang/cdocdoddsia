@@ -1,0 +1,1577 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <OwnerKey>{FE3BBBB6-72D5-11d2-9ACE-00C04F79A2A4}</OwnerKey>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{50F0D006-2B8E-4994-9A8F-C194F614EAD6}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>SIA.UI.Controls</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SIA.UI.Controls</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>0649; 1591</NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;GPU_SUPPORTED_</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>0649; 1591</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE;GPU_SUPPORTED_</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>
+    </DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib">
+      <Name>mscorlib</Name>
+    </Reference>
+    <Reference Include="OpenglScene, Version=1.0.0.24920, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\ThirdParty\OpenglScene.dll</HintPath>
+    </Reference>
+    <Reference Include="SIA.Common, Version=8.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SIA.IPEngine, Version=8.4.14.40110, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.IPEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="SIA.SystemFrameworks, Version=8.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.SystemFrameworks.dll</HintPath>
+    </Reference>
+    <Reference Include="SIA.UI.Help, Version=8.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.UI.Help.dll</HintPath>
+    </Reference>
+    <Reference Include="SIA.Workbench.Common, Version=8.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.Workbench.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SiGlaz.Algorithms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SiGlaz.Algorithms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\SIA.Algorithms\SIA.Algorithms.csproj">
+      <Project>{2CF4437A-E529-40DF-8AB6-F7E240ECBFFC}</Project>
+      <Name>SIA.Algorithms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIA.Plugin\SIA.Plugins.csproj">
+      <Project>{7CB6A1F4-FE03-4E6A-A4DD-ABA33F5637C4}</Project>
+      <Name>SIA.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIA.SystemLayers\SIA.SystemLayer.csproj">
+      <Project>{94369438-3449-4BB8-B1FB-940A3417F9EE}</Project>
+      <Name>SIA.SystemLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIA.UI.Components\SIA.UI.Components.csproj">
+      <Project>{6F52739C-17D5-4514-8303-4C16EC0BA012}</Project>
+      <Name>SIA.UI.Components</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIA.UI.MaskEditor\SIA.UI.MaskEditor.csproj">
+      <Project>{D107E3B1-96CB-4488-AC41-4899D8D04995}</Project>
+      <Name>SIA.UI.MaskEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiGlaz.Common\SiGlaz.Common.csproj">
+      <Project>{A8AE20C3-EAD5-4356-98CD-84F1A34F1A03}</Project>
+      <Name>SiGlaz.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiGlaz.ObjectAnalysis\SiGlaz.ObjectAnalysis.csproj">
+      <Project>{AD0C8A91-21B3-419D-9E56-4E7A7E573491}</Project>
+      <Name>SiGlaz.ObjectAnalysis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiGlaz.UI.CustomControls\SiGlaz.UI.CustomControls.csproj">
+      <Project>{84FF3ED8-9782-40A0-ABCD-E08591B81256}</Project>
+      <Name>SiGlaz.UI.CustomControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyVersionInfo.cs">
+      <Link>Properties\GlobalAssemblyVersionInfo.cs</Link>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AnalysisView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnalysisWorkspace.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppSettings.cs" />
+    <Compile Include="AppWorkspace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppWorkspaceEnviroment.cs" />
+    <Compile Include="Automation\CommandSettings\CombineObjectCommandSettings.cs" />
+    <Compile Include="Automation\CommandSettings\DetectAnomaliesSettings.cs" />
+    <Compile Include="Automation\CommandSettings\CustConvolutionCommandSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\CommandSettings\DetectObjectUsingGoldenImageSettings.cs" />
+    <Compile Include="Automation\Commands\AdObjectFilterSettings.cs" />
+    <Compile Include="Automation\Commands\ExportDefectListCommand.cs" />
+    <Compile Include="Automation\CommandSettings\ExportDefectListSettings.cs" />
+    <Compile Include="Automation\Commands\ExtGlobalBckgCommand.cs" />
+    <Compile Include="Automation\CommandSettings\ExtGlobalBckgSettings.cs" />
+    <Compile Include="Automation\Commands\ExtractFeatureCommand.cs" />
+    <Compile Include="Automation\Commands\FilterObjectCommand.cs" />
+    <Compile Include="Automation\Commands\HistEqualizeCommand.cs" />
+    <Compile Include="Automation\CommandSettings\MetrologySystemReferenceSettings.cs" />
+    <Compile Include="Automation\CommandSettings\ObjectClassificationSettings.cs" />
+    <Compile Include="Automation\Commands\ObjectFilterSettings.cs" />
+    <Compile Include="Automation\Commands\OverlayDefectOnABSCommand.cs" />
+    <Compile Include="Automation\Dialogs\DlgExportDefectListSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Automation\Dialogs\DlgExportDefectListSettings.Designer.cs">
+      <DependentUpon>DlgExportDefectListSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Automation\Steps\CombineObjectsStep.cs" />
+    <Compile Include="Automation\Steps\DetectAnomaliesStep.cs" />
+    <Compile Include="Automation\Steps\DetectCoordinateStep.cs" />
+    <Compile Include="Automation\Steps\DetectObjectStep.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Steps\ExportDefectListStep.cs" />
+    <Compile Include="Automation\Steps\ExtGlobalBckgStep.cs" />
+    <Compile Include="Automation\Steps\ExtractFeatureStep.cs" />
+    <Compile Include="Automation\Steps\FilterObjectStep.cs" />
+    <Compile Include="Automation\Steps\HistEqualizeStep.cs" />
+    <Compile Include="Automation\Steps\OverlayDefectOnABSStep.cs" />
+    <Compile Include="Automation\Steps\ReportAlignmentResultStep.cs" />
+    <Compile Include="Commands\AnalysisCommandExecutor.cs" />
+    <Compile Include="Commands\Analysis\AlignPoleTipCommand.cs" />
+    <Compile Include="Commands\Analysis\CombineObjectsCommand.cs" />
+    <Compile Include="Commands\Analysis\DefectExporter.cs" />
+    <Compile Include="Commands\FileCommandExecutor.cs" />
+    <Compile Include="Commands\FilterCommandExecutor.cs" />
+    <Compile Include="Commands\ProcessCommandExecutor.cs" />
+    <Compile Include="Commands\Process\CalculationCommand.cs" />
+    <Compile Include="Commands\Process\ConvolutionCommand.cs" />
+    <Compile Include="Commands\Analysis\CreateReferenceImageCommand.cs" />
+    <Compile Include="Commands\Analysis\DetectAnomaliesCommand.cs" />
+    <Compile Include="Commands\Analysis\DetectCoordinateSystemCommand.cs" />
+    <Compile Include="Commands\Filters\FilterWienerCommand.cs" />
+    <Compile Include="Commands\Analysis\OverlayDefectOnABSCommand.cs" />
+    <Compile Include="Commands\Filters\SimpleFilterCommand.cs" />
+    <Compile Include="Commands\Analysis\SubtractGoldenImageCommand.cs" />
+    <Compile Include="Commands\ToolsCommandExecutor.cs" />
+    <Compile Include="Dialogs\Analysis\DlgAdvancedObjectCombination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgAdvancedObjectCombination.Designer.cs">
+      <DependentUpon>DlgAdvancedObjectCombination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgAdvancedObjectAnalyzer2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgAdvancedObjectAnalyzer2.Designer.cs">
+      <DependentUpon>DlgAdvancedObjectAnalyzer2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgAdvancedObjectFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgAdvancedObjectFilter.Designer.cs">
+      <DependentUpon>DlgAdvancedObjectFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgCalibration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgCalibration.Designer.cs">
+      <DependentUpon>DlgCalibration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgCalibrationInputValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgCalibrationInputValue.Designer.cs">
+      <DependentUpon>DlgCalibrationInputValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgCombineObjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgCombineObjects.Designer.cs">
+      <DependentUpon>DlgCombineObjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgCoordinate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgCoordinate.Designer.cs">
+      <DependentUpon>DlgCoordinate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgCreateReferenceFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgCreateReferenceFile.Designer.cs">
+      <DependentUpon>DlgCreateReferenceFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgCreateReferenceImg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgCreateReferenceImg.Designer.cs">
+      <DependentUpon>DlgCreateReferenceImg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgDetectContaminationsSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgDetectContaminationsSettings.Designer.cs">
+      <DependentUpon>DlgDetectContaminationsSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgGoldenImageCreation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgGoldenImageCreation.Designer.cs">
+      <DependentUpon>DlgGoldenImageCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgDetectAnomaliesSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgDetectAnomaliesSettings.Designer.cs">
+      <DependentUpon>DlgDetectAnomaliesSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DlgFileBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DlgFileBrowser.Designer.cs">
+      <DependentUpon>DlgFileBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgMetrologyCoordinateSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgMetrologyCoordinateSystem.Designer.cs">
+      <DependentUpon>DlgMetrologyCoordinateSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgMetrologySystemReferenceBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgMetrologySystemReferenceBrowser.Designer.cs">
+      <DependentUpon>DlgMetrologySystemReferenceBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgObjectClassification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgObjectClassification.Designer.cs">
+      <DependentUpon>DlgObjectClassification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgObjectFilterEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgObjectFilterEx.Designer.cs">
+      <DependentUpon>DlgObjectFilterEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Process\DlgStretchColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Filters\DlgWienerFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Filters\DlgWienerFilter.Designer.cs">
+      <DependentUpon>DlgWienerFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\VisualAnalysis\CalibrationVisualizer.cs" />
+    <Compile Include="Helpers\VisualAnalysis\MeasurementVisualizer.cs" />
+    <Compile Include="Helpers\VisualAnalysis\MetrologyAnalyzer.cs" />
+    <Compile Include="ObjectAnalysis\ucABSAlignment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ObjectAnalysis\ucABSAlignment.Designer.cs">
+      <DependentUpon>ucABSAlignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectAnalysis\ucABSPreprocessingStep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ObjectAnalysis\ucABSPrimitiveObjectDetection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ObjectAnalysis\ucABSPrimitiveObjectDetection.Designer.cs">
+      <DependentUpon>ucABSPrimitiveObjectDetection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectAnalysis\ucABSPrimitiveObjectDetectionStep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\AutoCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\AutoCommandSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\CalculationCommandSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\ConvolutionCommandSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Commands\DetectObjectCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\CommandSettings\DetectObjectCommandSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Commands\FilterFFTCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\CommandSettings\FilterFFTCommandSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Commands\FilterRankCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\CommandSettings\FilterRankCommandSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Commands\FilterVarianceCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\CommandSettings\FilterVarianceCommandSetttings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Commands\FlipRotateImageCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\CommandSettings\FlipRotateImageCommandSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Commands\GaussianFilterCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Commands\GbcCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\CommandSettings\GbcCommandSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Commands\GbcErosionCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\CommandSettings\GbcErosionCommandSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Commands\GbcFFTCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\CommandSettings\GbcFFTCommandSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Commands\GbcRefImageCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\CommandSettings\GbcRefImageCommandSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Commands\GbcUnsharpCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\CommandSettings\GbcUnsharpCommandSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Commands\InvertCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Commands\KernelFilterCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\CommandSettings\KernelFilterCommandSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Commands\LaunchExternalApplicationCommandSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Commands\LoadImageCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\CommandSettings\LoadImageCommandSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Commands\MorphologyCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\CommandSettings\MorphologyCommandSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Commands\SaveImageCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\CommandSettings\SaveImageCommandSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Commands\SmoothFilterCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Commands\ThresholdCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\CommandSettings\ThresholdCommandSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Dialogs\DlgLoadImageStep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Automation\Dialogs\DataGriComboColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Automation\Dialogs\DefineOutputFileName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Automation\Dialogs\DlgFileNameFormat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Automation\Dialogs\DlgFileNameFormat2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Automation\Dialogs\DlgImportScript.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Automation\Dialogs\DlgInputFileFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Automation\Dialogs\DlgLaunchExternalApplicationSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Automation\Dialogs\DlgLoadExtAutoCommandSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Automation\Dialogs\DlgLoadImageStepSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Automation\Dialogs\DlgLoadImageStepSettings2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Automation\Dialogs\DlgSaveImageStepSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Automation\Dialogs\DlgWaitForScriptLauncher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Automation\Dialogs\ucFileNameFormat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Automation\IDataProviderStep.cs" />
+    <Compile Include="Automation\ProcessStep.cs">
+    </Compile>
+    <Compile Include="Automation\ProcessStepCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\ProcessStepManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\RasterCommandSettingsSerializer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Resources\Strings.cs">
+      <SubType>Code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Automation\Script.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\ScriptCallbackArguments.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\ScriptFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\ScriptSerializer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\ScriptV2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\ScriptValidationException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Steps\CalculationsStep.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Steps\ConvolutionStep.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Steps\FilterFFTStep.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Steps\FilterRankStep.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Steps\FilterVarianceStep.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Steps\GaussianFilterStep.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Steps\GbcStep.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Steps\InvertStep.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Steps\KernelFilterStep.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Steps\LoadImageStep.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Steps\LoadSingleImageStep.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\ProcessStepCategories.cs" />
+    <Compile Include="Automation\Steps\SaveImageStep.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Steps\SmoothFilterStep.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Steps\ThresholdStep.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\StringParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\Utilities\FileNameGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\ValidationKeys.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Automation\WorkingSpace.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\HistoryCollection.cs" />
+    <Compile Include="ConsoleLog.cs" />
+    <Compile Include="Dialogs\DlgContextSensitiveHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DocumentWorkspace.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\CameraCorrectionCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\CommandExecutor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\ComputeIntensityHistogramCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\CustConvolutionCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Analysis\DetectObjectCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\DyadicCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\ExtBckgndErosionCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\ExtBckgndFFTCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Filters\FilterFFTCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Filters\FilterRankCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Filters\FilterVarianceCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\FlipImageCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\GbcErosionCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\GbcFFTCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\GbcRefImageCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\GbcUnsharpCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Filters\GenericFilters.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\HistEqualizeCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\HistoryRedoCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\HistoryRestoreByStepCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\HistoryUndoCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\InvertCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\LightenUpCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\LoadImageCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Filters\MonadicCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Filters\MorphologyCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\RasterCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\RasterCommandExceptionArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\RasterCommandPerformanceCounters.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\RasterCommandResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\RasterCommandSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\ResizeImageCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\ResizeImageCommandSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\RotateImageCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\SaveImageCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\StretchColorCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Process\ThresholdCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\ClusterData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Common.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\ContextSensitiveHelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\DataItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\History.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\UserSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\HistorgramViewer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\HistoryListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ImagePreview.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helpers\VisualAnalysis\ImageAnalyzer.cs" />
+    <Compile Include="ImageViewer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DialogBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DialogPreviewBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\View\DlgAreaPlotSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Process\DlgCalculation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Process\DlgCameraCorrection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgClusterInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgCoordinateSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Filters\DlgCustomFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\File\DlgCustomHeaderInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Process\DlgExtractGlobalBackground.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Filters\DlgFFTFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Process\DlgFlipRotate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Process\DlgGlobalBackgroundCorrection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\File\DlgImageProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\View\DlgIntensityHistogram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\View\DlgIntensityHistogramEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Filters\DlgKernelFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\View\DlgLineProfile2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\View\DlgLineProfileSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Process\DlgManualZoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgObjectFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgObjectsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Utilities\DlgProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\View\DlgPseudoColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Filters\DlgRankFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Process\DlgResize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Process\DlgRotate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\View\DlgScreenStretchEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Filters\DlgSmoothDynamicThreshold.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Analysis\DlgStressDetection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Process\DlgThreshold.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Process\DlgThresholdParameter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DlgTranslate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\View\DlgTrendline2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Process\DlgUnsharpGlobalBackground.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Filters\DlgVarianceFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FloatingFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileTypes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\ClipboardHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\HistoryHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\PrintHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\VisualAnalysis\BaseVisualAnalyzer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\VisualAnalysis\DataProfileHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\VisualAnalysis\DataProfilers\AreaPlot.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\VisualAnalysis\DataProfilers\BaseDataProfile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\VisualAnalysis\DataProfilers\BoxProfile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\VisualAnalysis\DataProfilers\DataProfileSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\VisualAnalysis\DataProfilers\HorizonalBoxProfile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\VisualAnalysis\DataProfilers\HorizontalLineProfile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\VisualAnalysis\DataProfilers\IDataProfiler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\VisualAnalysis\DataProfilers\LineProfile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\VisualAnalysis\DataProfilers\VerticalBoxProfile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\VisualAnalysis\DataProfilers\VerticalLineProfile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\VisualAnalysis\IVisualAnalyzer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\VisualAnalysis\MaskViewer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\VisualAnalysis\ObjectAnalyzer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MessageBoxEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MouseEventArgsEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocalResources.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RecentFileManager.cs" />
+    <Compile Include="Resources\Settings\DefaultSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TraceLog.cs" />
+    <Compile Include="UserControls\ColorPicker\ColourPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ColorPicker\ColourPanelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\ColorPicker\ColourPanelWithCapture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ColorPicker\ColourPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ColorPicker\CustomColorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ColorPicker\CustomColorPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ColorPicker\kColorPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ColorPicker\Utils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControls\DataPlot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\HistogramViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ImageWorkspace.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\kGraphHistogram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\kSlider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Navigator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\OpenImageFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PropertyListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCalibrationList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCalibrationList.Designer.cs">
+      <DependentUpon>ucCalibrationList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCoordinateSystem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCoordinateSystem.Designer.cs">
+      <DependentUpon>ucCoordinateSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucFileBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucFileBrowser.Designer.cs">
+      <DependentUpon>ucFileBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucFileList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucFileList.Designer.cs">
+      <DependentUpon>ucFileList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucMarkerList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucMarkerList.Designer.cs">
+      <DependentUpon>ucMarkerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucObjectFilterItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucObjectFilterItem.Designer.cs">
+      <DependentUpon>ucObjectFilterItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucUnitConfiguration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucUnitConfiguration.Designer.cs">
+      <DependentUpon>ucUnitConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\CommonDialogs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\DrawHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\EventObjects.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\GDIWrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\kPersistentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities\kUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\PersistenceDefault.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\RubberbandRects.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="AnalysisWorkspace.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnalysisWorkspace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppWorkspace.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AppWorkspace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Automation\Dialogs\DlgExportDefectListSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DlgExportDefectListSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Automation\Dialogs\DlgLoadImageStep.resx">
+      <DependentUpon>DlgLoadImageStep.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Automation\Dialogs\DefineOutputFileName.resx">
+      <DependentUpon>DefineOutputFileName.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Automation\Dialogs\DlgFileNameFormat.resx">
+      <DependentUpon>DlgFileNameFormat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Automation\Dialogs\DlgFileNameFormat2.resx">
+      <DependentUpon>DlgFileNameFormat2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Automation\Dialogs\DlgImportScript.resx">
+      <DependentUpon>DlgImportScript.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Automation\Dialogs\DlgInputFileFilter.resx">
+      <DependentUpon>DlgInputFileFilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Automation\Dialogs\DlgLaunchExternalApplicationSettings.resx">
+      <DependentUpon>DlgLaunchExternalApplicationSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Automation\Dialogs\DlgLoadExtAutoCommandSettings.resx">
+      <DependentUpon>DlgLoadExtAutoCommandSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Automation\Dialogs\DlgLoadImageStepSettings.resx">
+      <DependentUpon>DlgLoadImageStepSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Automation\Dialogs\DlgLoadImageStepSettings2.resx">
+      <DependentUpon>DlgLoadImageStepSettings2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Automation\Dialogs\DlgSaveImageStepSettings.resx">
+      <DependentUpon>DlgSaveImageStepSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Automation\Dialogs\DlgWaitForScriptLauncher.resx">
+      <DependentUpon>DlgWaitForScriptLauncher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Automation\Dialogs\ucFileNameFormat.resx">
+      <DependentUpon>ucFileNameFormat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Automation\Resources\Strings.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Analysis\DlgAdvancedObjectCombination.resx">
+      <DependentUpon>DlgAdvancedObjectCombination.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Analysis\DlgAdvancedObjectAnalyzer2.resx">
+      <DependentUpon>DlgAdvancedObjectAnalyzer2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Analysis\DlgAdvancedObjectFilter.resx">
+      <DependentUpon>DlgAdvancedObjectFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Analysis\DlgCalibration.resx">
+      <DependentUpon>DlgCalibration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Analysis\DlgCalibrationInputValue.resx">
+      <DependentUpon>DlgCalibrationInputValue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Analysis\DlgCombineObjects.resx">
+      <DependentUpon>DlgCombineObjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Analysis\DlgCoordinate.resx">
+      <DependentUpon>DlgCoordinate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Analysis\DlgCreateReferenceFile.resx">
+      <DependentUpon>DlgCreateReferenceFile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Analysis\DlgCreateReferenceImg.resx">
+      <DependentUpon>DlgCreateReferenceImg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Analysis\DlgDetectAnomaliesSettings.resx">
+      <DependentUpon>DlgDetectAnomaliesSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Analysis\DlgDetectContaminationsSettings.resx">
+      <DependentUpon>DlgDetectContaminationsSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DlgContextSensitiveHelp.resx">
+      <DependentUpon>DlgContextSensitiveHelp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Analysis\DlgGoldenImageCreation.resx">
+      <DependentUpon>DlgGoldenImageCreation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DlgFileBrowser.resx">
+      <DependentUpon>DlgFileBrowser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Analysis\DlgMetrologyCoordinateSystem.resx">
+      <DependentUpon>DlgMetrologyCoordinateSystem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Analysis\DlgMetrologySystemReferenceBrowser.resx">
+      <DependentUpon>DlgMetrologySystemReferenceBrowser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Analysis\DlgObjectClassification.resx">
+      <DependentUpon>DlgObjectClassification.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Analysis\DlgObjectFilterEx.resx">
+      <DependentUpon>DlgObjectFilterEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Process\DlgStretchColor.resx">
+      <DependentUpon>DlgStretchColor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Filters\DlgWienerFilter.resx">
+      <DependentUpon>DlgWienerFilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentWorkspace.resx">
+      <DependentUpon>DocumentWorkspace.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ContextSensitiveHelpForm.resx">
+      <DependentUpon>ContextSensitiveHelpForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\HistorgramViewer.resx">
+      <DependentUpon>HistorgramViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\HistoryListBox.resx">
+      <DependentUpon>HistoryListBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ImagePreview.resx">
+      <DependentUpon>ImagePreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjectAnalysis\ucABSAlignment.resx">
+      <DependentUpon>ucABSAlignment.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjectAnalysis\ucABSPreprocessingStep.resx">
+      <DependentUpon>ucABSPreprocessingStep.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjectAnalysis\ucABSPrimitiveObjectDetection.resx">
+      <DependentUpon>ucABSPrimitiveObjectDetection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjectAnalysis\ucABSPrimitiveObjectDetectionStep.resx">
+      <DependentUpon>ucABSPrimitiveObjectDetectionStep.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Cursors\ClusterInfo.cur" />
+    <EmbeddedResource Include="Resources\Cursors\drawcircle.cur" />
+    <EmbeddedResource Include="Resources\Cursors\DrawWaferBound.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Hand.cur" />
+    <EmbeddedResource Include="Resources\Cursors\resize.cur" />
+    <EmbeddedResource Include="Resources\Cursors\SelectNotch.cur" />
+    <EmbeddedResource Include="Resources\Cursors\zoomin.cur" />
+    <EmbeddedResource Include="Resources\Cursors\zoomout.cur" />
+    <EmbeddedResource Include="Dialogs\DialogBase.resx">
+      <DependentUpon>DialogBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DialogPreviewBase.resx">
+      <DependentUpon>DialogPreviewBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\View\DlgAreaPlotSettings.resx">
+      <DependentUpon>DlgAreaPlotSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Process\DlgCalculation.resx">
+      <DependentUpon>DlgCalculation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Process\DlgCameraCorrection.resx">
+      <DependentUpon>DlgCameraCorrection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Analysis\DlgClusterInformation.resx">
+      <DependentUpon>DlgClusterInformation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Analysis\DlgCoordinateSettings.resx">
+      <DependentUpon>DlgCoordinateSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Filters\DlgCustomFilter.resx">
+      <DependentUpon>DlgCustomFilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\File\DlgCustomHeaderInfo.resx">
+      <DependentUpon>DlgCustomHeaderInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Process\DlgExtractGlobalBackground.resx">
+      <DependentUpon>DlgExtractGlobalBackground.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Filters\DlgFFTFilter.resx">
+      <DependentUpon>DlgFFTFilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Process\DlgFlipRotate.resx">
+      <DependentUpon>DlgFlipRotate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Process\DlgGlobalBackgroundCorrection.resx">
+      <DependentUpon>DlgGlobalBackgroundCorrection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\File\DlgImageProperties.resx">
+      <DependentUpon>DlgImageProperties.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\View\DlgIntensityHistogram.resx">
+      <DependentUpon>DlgIntensityHistogram.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\View\DlgIntensityHistogramEx.resx">
+      <DependentUpon>DlgIntensityHistogramEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Filters\DlgKernelFilter.resx">
+      <DependentUpon>DlgKernelFilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\View\DlgLineProfile2.resx">
+      <DependentUpon>DlgLineProfile2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\View\DlgLineProfileSetting.resx">
+      <DependentUpon>DlgLineProfileSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Process\DlgManualZoom.resx">
+      <DependentUpon>DlgManualZoom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Analysis\DlgObjectFilter.resx">
+      <DependentUpon>DlgObjectFilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Analysis\DlgObjectsList.resx">
+      <DependentUpon>DlgObjectsList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Utilities\DlgProgress.resx">
+      <DependentUpon>DlgProgress.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\View\DlgPseudoColor.resx">
+      <DependentUpon>DlgPseudoColor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Filters\DlgRankFilter.resx">
+      <DependentUpon>DlgRankFilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Process\DlgResize.resx">
+      <DependentUpon>DlgResize.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Process\DlgRotate.resx">
+      <DependentUpon>DlgRotate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\View\DlgScreenStretchEx.resx">
+      <DependentUpon>DlgScreenStretchEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Filters\DlgSmoothDynamicThreshold.resx">
+      <DependentUpon>DlgSmoothDynamicThreshold.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Analysis\DlgStressDetection.resx">
+      <DependentUpon>DlgStressDetection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Process\DlgThreshold.resx">
+      <DependentUpon>DlgThreshold.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Process\DlgThresholdParameter.resx">
+      <DependentUpon>DlgThresholdParameter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DlgTranslate.resx">
+      <DependentUpon>DlgTranslate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\View\DlgTrendline2.resx">
+      <DependentUpon>DlgTrendline2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Process\DlgUnsharpGlobalBackground.resx">
+      <DependentUpon>DlgUnsharpGlobalBackground.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Filters\DlgVarianceFilter.resx">
+      <DependentUpon>DlgVarianceFilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\FloatingFormBase.resx">
+      <DependentUpon>FloatingFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Icon\icon.ico" />
+    <EmbeddedResource Include="Icon\icon.ico" />
+    <EmbeddedResource Include="Resources\objectlist.htm" />
+    <EmbeddedResource Include="Resources\Settings\DetectWaferBoundDefaultSettings.settings" />
+    <EmbeddedResource Include="Resources\Settings\KLARFExport.settings" />
+    <EmbeddedResource Include="Resources\Settings\KlarfExportSettings.settings" />
+    <EmbeddedResource Include="Resources\Settings\ObjDetectionSettings.settings" />
+    <EmbeddedResource Include="Resources\Settings\ObjectFilterSettings.ofs" />
+    <EmbeddedResource Include="UserControls\ColorPicker\ColourPanel.resx">
+      <DependentUpon>ColourPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ColorPicker\ColourPanelForm.resx">
+      <DependentUpon>ColourPanelForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ColorPicker\ColourPanelWithCapture.resx">
+      <DependentUpon>ColourPanelWithCapture.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ColorPicker\ColourPicker.resx">
+      <DependentUpon>ColourPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ColorPicker\CustomColorPanel.resx">
+      <DependentUpon>CustomColorPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ColorPicker\CustomColorPicker.resx">
+      <DependentUpon>CustomColorPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ColorPicker\kColorPicker.resx">
+      <DependentUpon>kColorPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\DataPlot.resx">
+      <DependentUpon>DataPlot.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\HistogramViewer.resx">
+      <DependentUpon>HistogramViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageWorkspace.resx">
+      <DependentUpon>ImageWorkspace.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\kGraphHistogram.resx">
+      <DependentUpon>kGraphHistogram.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\kSlider.resx">
+      <DependentUpon>kSlider.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Navigator.resx">
+      <DependentUpon>Navigator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\OpenImageFile.resx">
+      <DependentUpon>OpenImageFile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PropertyListView.resx">
+      <DependentUpon>PropertyListView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucCalibrationList.resx">
+      <DependentUpon>ucCalibrationList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucCoordinateSystem.resx">
+      <DependentUpon>ucCoordinateSystem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucFileBrowser.resx">
+      <DependentUpon>ucFileBrowser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucFileList.resx">
+      <DependentUpon>ucFileList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucMarkerList.resx">
+      <DependentUpon>ucMarkerList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucObjectFilterItem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucObjectFilterItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucUnitConfiguration.resx">
+      <DependentUpon>ucUnitConfiguration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\kPersistentForm.resx">
+      <DependentUpon>kPersistentForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Components\Extensions\Add.ico" />
+    <Content Include="Components\Extensions\ArrowDown.ICO" />
+    <Content Include="Components\Extensions\ArrowUp.ICO" />
+    <Content Include="Components\Extensions\Delete.ICO" />
+    <Content Include="Components\Extensions\Refresh.ico" />
+    <Content Include="Dialogs\DialogTemplate.cs">
+      <SubType>Code</SubType>
+    </Content>
+    <None Include="Resources\extra_large.png" />
+    <None Include="Resources\small.png" />
+    <None Include="Resources\list.png" />
+    <None Include="Resources\detail.png" />
+    <None Include="Resources\title.png" />
+    <None Include="Resources\show_preview.png" />
+    <None Include="Resources\open.png" />
+    <None Include="Resources\save__as_pattern_lib.png" />
+    <None Include="Resources\zone_lib_new.png" />
+    <None Include="Resources\zone_lib_save.gif" />
+    <None Include="Resources\add_class.png" />
+    <None Include="Resources\new_object.gif" />
+    <None Include="Resources\edit_available_object.gif" />
+    <None Include="Resources\delete_obj.gif" />
+    <EmbeddedResource Include="Resources\arrow.png" />
+    <EmbeddedResource Include="Resources\normal_arrow.png" />
+    <None Include="Resources\coordinate_system.png" />
+    <Content Include="Resources\ruler.png" />
+    <Content Include="Website link.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dialogs\Edit\" />
+    <Folder Include="Dialogs\Tools\" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

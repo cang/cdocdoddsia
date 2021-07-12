@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>1</Version>
+  <Name />
+  <Description />
+  <LoadImageStep>
+    <Index>0</Index>
+    <SettingsFilePath />
+    <SelfSettings>
+      <Version>1</Version>
+      <FileName />
+      <FilePath />
+      <InputFileType>File</InputFileType>
+      <ClearProcessedFileHistory>false</ClearProcessedFileHistory>
+      <ScanSubFolder>false</ScanSubFolder>
+      <Data>
+        <ProcessingData>
+          <FilePath>D:\SiGlaz\ABS\Main\Docs\Requirements\Data\ABS-Inspection\New ABS - Pole Images\50x_10x.63\a</FilePath>
+          <Scan>true</Scan>
+          <SubFolder>false</SubFolder>
+        </ProcessingData>
+      </Data>
+      <UseFilter>true</UseFilter>
+      <Filter>
+        <FilterInputFileFormat>false</FilterInputFileFormat>
+        <Bmp>false</Bmp>
+        <Jpeg>false</Jpeg>
+        <Png>false</Png>
+        <Tiff>false</Tiff>
+        <Gif>false</Gif>
+        <Fit>false</Fit>
+        <FilterInputFileName>false</FilterInputFileName>
+        <FileNameFormat>ABS*</FileNameFormat>
+      </Filter>
+    </SelfSettings>
+  </LoadImageStep>
+  <DetectCoordinateStep>
+    <Index>0</Index>
+    <SettingsFilePath />
+    <MetrologySystemReferenceSettings>
+      <Version>1</Version>
+      <FilePath>D:\SiGlaz\ABS\Main\Docs\Requirements\Team\Test\bbbbbbbbb.msr</FilePath>
+    </MetrologySystemReferenceSettings>
+  </DetectCoordinateStep>
+  <DetectAnomaliesStep>
+    <Index>0</Index>
+    <SettingsFilePath />
+    <DetectAnomaliesSettings>
+      <Version>1</Version>
+      <ApplyRegions>true</ApplyRegions>
+    </DetectAnomaliesSettings>
+  </DetectAnomaliesStep>
+</Script>

@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="SIA.Plugins.Common.BaseCommand" Collapsed="true">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BaseCommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABBAAAAAAAAAAAAAAABAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SIA.Plugins.Common.BasePlugin2" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BasePlugin.cs</FileName>
+      <HashCode>AAAAIAAAQAAg4QAEAARAACQAAAAAAAAAEAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SIA.Plugins.Common.BaseUICommand" Collapsed="true">
+    <Position X="3.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BaseUICommand.cs</FileName>
+      <HashCode>AABAAIAAAACAQAAAAAAAAgABAIAAAAACAAAAAACAIIA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SIA.Plugins.Common.Categories" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Categories.cs</FileName>
+      <HashCode>AAAAAAAAAAAIAAAAAoAAAAAAAAAFAAACQAAABAFAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SIA.Plugins.Common.dsPlugins" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAJABAQAQAAAAAgCQBgAAgAAAEEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SIA.Plugins.Common.MenuInfo" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MenuInfo.cs</FileName>
+      <HashCode>AAAAAABAAAAgBRAAAAAgAAAABAAAQBAIAAEEDQAACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SIA.Plugins.Common.PluginCollection2" Collapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PluginCollection.cs</FileName>
+      <HashCode>AAIAAAAAAAAAAAAACAAABAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SIA.Plugins.Common.ShortcutInfo" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ShortcutInfo.cs</FileName>
+      <HashCode>AAAAAAAAAAAABAAAAAAgAAAAAAAAQBAIAAEACAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SIA.Plugins.Common.ToolBarInfo" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ToolbarInfo.cs</FileName>
+      <HashCode>AAAAAADAAAAgAAAAAAgggAAAAAAAQBAIBAEEqSAAwCA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="SIA.Plugins.Common.IAutomationWorkspace" Collapsed="true">
+    <Position X="6" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IAutomationWorkspace.cs</FileName>
+      <HashCode>AAAAAAAAIAAIAAAAAAAEAAAAAAAAAAAAAAAAAAAgEAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SIA.Plugins.Common.ICommandDispatcher" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ICommandDispatcher.cs</FileName>
+      <HashCode>AAAAQgAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SIA.Plugins.Common.IMainFrame2" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IMainFrame.cs</FileName>
+      <HashCode>AAAAAABAQABAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SIA.Plugins.Common.ICommandHandler" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IPlugin.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABBAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SIA.Plugins.Common.IUICommandHandler" Collapsed="true">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IPlugin.cs</FileName>
+      <HashCode>AABAAIAAAAAAQAAAAAAAAgABAIAAAAAAAAAAAACAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SIA.Plugins.Common.IPlugin2" Collapsed="true">
+    <Position X="9.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IPlugin.cs</FileName>
+      <HashCode>AAAAAAAAAAAgoQAAAAAAAAQAAAAAAAAAEAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SIA.Plugins.Common.IPluginManager2" Collapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IPlugin.cs</FileName>
+      <HashCode>AAAIAgAAAAAAQAAAAAAAAAAAEBAAAAAAAgAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SIA.Plugins.Common.IPluginFactory2" Collapsed="true">
+    <Position X="11.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IPlugin.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SIA.Plugins.Common.IRasterCommandSettings" Collapsed="true">
+    <Position X="7.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IProcessStep.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SIA.Plugins.Common.IProcessStep" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IProcessStep.cs</FileName>
+      <HashCode>QAAAEAAAUACggIAAAAAAAAQAAAAAAAAAgAECQBAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SIA.Plugins.Common.IProcessStep2" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IProcessStep.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SIA.Plugins.Common.IProcessStepManager" Collapsed="true">
+    <Position X="6" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IProcessStep.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SIA.Plugins.Common.IProcessStepFactory" Collapsed="true">
+    <Position X="11.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IProcessStep.cs</FileName>
+      <HashCode>AAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SIA.Plugins.Common.IProgressHandler" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IProgressHandler.cs</FileName>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAgAAAAAAAIBAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SIA.Plugins.Common.IScript" Collapsed="true">
+    <Position X="9.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IScript.cs</FileName>
+      <HashCode>JAAAAAAAAAAgAAAAAAAAAAQAAAAAACAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SIA.Plugins.Common.IExecutionScript" Collapsed="true">
+    <Position X="7.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IScript.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SIA.Plugins.Common.IWorkspace" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IWorkspace.cs</FileName>
+      <HashCode>AAAAEAAAAAAAAAAAEAACAAAAAAIAAAAAEAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="SIA.Plugins.Common.ProgressType" Collapsed="true">
+    <Position X="6" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IProgressHandler.cs</FileName>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SIA.Plugins.Common.SeparateStyle" Collapsed="true">
+    <Position X="7.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MenuInfo.cs</FileName>
+      <HashCode>AAAAACAAAAAAAAAAAgAAAAAAABAAAAAAAAAAAAUAQAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SIA.Plugins.Common.UIElementStatus" Collapsed="true">
+    <Position X="9.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>UIElementStatus.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAACAAABACAAAAAAAACAIAABgAAIAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

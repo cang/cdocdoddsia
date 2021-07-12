@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A8AE20C3-EAD5-4356-98CD-84F1A34F1A03}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SiGlaz.Common</RootNamespace>
+    <AssemblyName>SiGlaz.Common</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SIA.Common, Version=8.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SIA.SystemFrameworks, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SIA.SystemFrameworks.dll</HintPath>
+    </Reference>
+    <Reference Include="SiGlaz.Algorithms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\SIACore\Dotfuscated\SiGlaz.Algorithms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABSDefinitions\eDefectType.cs" />
+    <Compile Include="ABSInspectionSettings\ContaminationsDetectionSettings.cs" />
+    <Compile Include="ABSInspectionSettings\TexturalExtractorSettings.cs" />
+    <Compile Include="BinarySerializationCommon.cs" />
+    <Compile Include="ImageAlignment\ABSAlignmentSettings.cs" />
+    <Compile Include="ImageAlignment\AlignmentSettings.cs" />
+    <Compile Include="ImageAlignment\CoordinateSystem.cs" />
+    <Compile Include="ImageAlignment\DepoAlignmentSettings.cs" />
+    <Compile Include="PathHelper.cs" />
+    <Compile Include="Pattern\CorrelationPattern.cs" />
+    <Compile Include="Pattern\HaarPattern.cs" />
+    <Compile Include="ImageAlignment\Marker.cs" />
+    <Compile Include="ImageAlignment\MetrologyRuler.cs" />
+    <Compile Include="ImageAlignment\MetrologySystem.cs" />
+    <Compile Include="ImageAlignment\MetrologySystemReference.cs" />
+    <Compile Include="ImageAlignment\MetrologyUnit.cs" />
+    <Compile Include="ImageAlignment\PoleTipAlignmentSettings.cs" />
+    <Compile Include="ImageAlignment\RectRegion.cs" />
+    <Compile Include="Object\DetectedObjectEx.cs" />
+    <Compile Include="Features.cs" />
+    <Compile Include="ImageAlignment\Settings.cs" />
+    <Compile Include="LineClassifyingInput.cs" />
+    <Compile Include="LinePatternLibrary.cs" />
+    <Compile Include="Object\EllipticalDensityShapeObject.cs" />
+    <Compile Include="Object\SimplePolygonProcessor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Region\DrawEllipse.cs" />
+    <Compile Include="Region\DrawLine.cs" />
+    <Compile Include="Region\DrawObject.cs" />
+    <Compile Include="Region\DrawOnionRing.cs" />
+    <Compile Include="Region\DrawPolygon.cs" />
+    <Compile Include="Region\DrawRectangle.cs" />
+    <Compile Include="Region\GraphicsList.cs" />
+    <Compile Include="Region\GraphicsProperties.cs" />
+    <Compile Include="Region\IMaskEditor.cs" />
+    <Compile Include="Resources\Cursors\ApplicationCursors.cs" />
+    <Compile Include="Region\VersionBinder.cs" />
+    <Compile Include="SettingsHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Cursors\Ellipse.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Line.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Pencil.cur" />
+    <EmbeddedResource Include="Resources\Cursors\PolyHandle.cur" />
+    <EmbeddedResource Include="Resources\Cursors\Rectangle.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Ex\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
